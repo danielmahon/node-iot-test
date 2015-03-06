@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Check if Wiring Pi is already installed
 if command -v gpio >/dev/null 2>&1
 then
