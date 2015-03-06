@@ -1,4 +1,4 @@
-FROM resin/rpi-node:0.10-onbuild
+FROM resin/rpi-node:0.10
 
 RUN apt-get update && apt-get install -y libi2c-dev git
 
