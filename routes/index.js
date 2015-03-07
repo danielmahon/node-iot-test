@@ -28,7 +28,7 @@ board.on("ready", function() {
   sendMessage('Security System Online');
 
   // Create a new `motion` hardware instance.
-  var motion = new five.IR.Motion(1);
+  var motion = new five.IR.Motion('GPIO18');
 
   // "calibrated" occurs once, at the beginning of a session,
   motion.on("calibrated", function() {
