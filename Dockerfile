@@ -1,1 +1,3 @@
-FROM resin/rpi-node:0.10.35-onbuild
+FROM resin/rpi-node:0.10-onbuild
+
+RUN alias sudo=""
