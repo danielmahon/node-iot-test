@@ -2,7 +2,7 @@ FROM resin/rpi-node:0.10
 
 RUN alias sudo="/usr/bin/sudo"
 
-RUN sudo ll
+RUN which sudo
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
