@@ -3,7 +3,7 @@ FROM resin/rpi-node:0.10-slim
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-RUN apt-get update && apt-get install -y sudo libi2c-dev
+RUN apt-get update && apt-get install -y sudo libi2c-dev git
 
 RUN git clone git://git.drogon.net/wiringPi
 WORKDIR wiringPi
