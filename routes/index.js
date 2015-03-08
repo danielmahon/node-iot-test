@@ -13,6 +13,10 @@ var sns = new AWS.SNS();
 var intruder = false;
 
 function sendMessage(msg) {
+  if (!process.env.AWS_SNS_TOPIC_ARN) {
+    console.log('No SNS Topic defined.');
+    return; //no topic defined
+  }
   var params = {
     Message: msg, /* required */
     TopicArn: process.env.AWS_SNS_TOPIC_ARN
